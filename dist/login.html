@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../scss/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <title>Welcome to the DevConnector</title>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <h1>
+            <a href="dashboard.html">
+                <i class="fas fa-code"></i> DevConnector
+            </a>
+        </h1>
+        <ul>
+            <li><a href="profile.html">Developers</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <!--ALERT ?-->
+        <div class="alert alert-danger">
+            Invalid Credential
+        </div>
+        <h1 class="large text-primary">
+            Sign up
+        </h1>
+        <p class="lead">
+            <i class="fas fa-user"></i>
+            Sign in to
+        </p>
+        <form action="dashboard.html" class="form">
+            
+            <div class="form-group">
+                <input type="email" placeholder="Email address">
+            </div>
+            
+            <div class="form-group">
+                <input type="password" placeholder="password" minlength="5">
+            </div>
+            
+            <input type="submit" value="Login" class="btn btn-primary">
+        </form>
+        <p class="my-1">
+            No account ?
+            <a href="register.html" style="color: blue">Sign up</a>
+        </p>
+    </section>
+    <script src="https://kit.fontawesome.com/86cedb431d.js" crossorigin="anonymous"></script>
+</body>
+</html>
