@@ -108,6 +108,16 @@
   color: #17a2b8;
 }
 
+.round-img {
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  background: #ccc;
+  margin: 1.5rem 0;
+}
+
 .bg-primary {
   background-color: #17a2b8;
   color: #fff;
@@ -202,6 +212,35 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.1rem;
+  text-align: center;
+  margin: 0.3rem;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.badge.badge-primary {
+  background-color: #17a2b8;
+  color: #fff;
+}
+
+.badge.badge-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.badge.badge-success {
+  background-color: green;
+  color: #fff;
+}
+
+.badge.badge-danger {
+  background-color: red;
+  color: #fff;
 }
 
 .alert {
@@ -346,5 +385,136 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.profile {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 4fr 2fr;
+      grid-template-columns: 2fr 4fr 2fr;
+  grid-gap: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.profile-grid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'top top' 'about about' 'exp edu' 'github github';
+  grid-gap: 1rem;
+}
+
+.profile-grid .profile-top {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.profile-grid .profile-top img {
+  width: 250px;
+}
+
+.profile-grid .profile-top .icons a {
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
+.profile-grid .profile-top .icons a:hover {
+  color: #343a40;
+}
+
+.profile-grid .profile-about {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: about;
+  text-align: center;
+}
+
+.profile-grid .profile-about .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.profile-grid .profile-exp {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: exp;
+}
+
+.profile-grid .profile-edu {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: edu;
+}
+
+.profile-grid .profile-exp > div, .profile-grid .profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted;
+}
+
+.profile-grid .profile-exp:last-child, .profile-grid .profile-edu:last-child {
+  border: none;
+}
+
+.profile-grid .profile-exp p, .profile-grid .profile-edu p {
+  margin: 0.5rem 0;
+}
+
+.profile-grid .profile-github {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: github;
+}
+
+.profile-grid .profile-github .repo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-grid .profile-github .repo > div:first-child {
+  -webkit-box-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+}
+
+.profile-grid .profile-github .repo > div:last-child {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
 }
 /*# sourceMappingURL=style.css.map */

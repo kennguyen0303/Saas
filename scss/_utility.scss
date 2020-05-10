@@ -28,6 +28,14 @@
 .text-primary{
     color: $primary-color;
 }
+.round-img{
+    border-radius: 50%;
+}
+.line{
+    height: 1px;
+    background: #ccc;
+    margin: 1.5rem 0;
+}
 //backgrounds
 .bg{
     &-primary{ //a placeholder --> bg-primary this one, like a cond
@@ -108,7 +116,28 @@
     left: 0;
     background-color: rgba(0,0,0,0.6);
 }
+//badges;
+.badge {
+    font-size: 0.8rem;
+    padding: 0.1rem;
+    text-align: center;
+    margin: 0.3rem;
+    background: $light-color;
+    color: #333;
 
+    &.badge-primary {
+        @include set-background($primary-color)
+    }
+    &.badge-dark {
+        @include set-background($dark-color)
+    }
+    &.badge-success {
+        @include set-background($success-color)
+    }
+    &.badge-danger {
+        @include set-background($danger-color)
+    }
+}
 //Alerts
 .alert{
     padding: 0.8rem;
