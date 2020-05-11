@@ -1,7 +1,7 @@
-# Saas
-A project for exploring saas css
+# Sass
+A project for exploring sass css
 
-Creating a theme for a couple web pages using SAAS CSS 
+Creating a theme for a couple web pages using SASS CSS 
 
 <h1>A. Summary of learning</h1>
 
