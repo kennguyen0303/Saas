@@ -47,7 +47,5 @@ Creating a theme for a couple web pages using SASS CSS
      <h3>4. Some <strong>very NICE</strong> social media icons with their colors programmed by SASS with sub-class naming</h3>
     <img src="picture_summary/social_media_icon.png"/>
     
-  
-  
- 
+<h3>--------------------Thanks for reading until here ! </h3>
  
